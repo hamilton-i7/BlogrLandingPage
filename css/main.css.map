@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/abstract/_colors.scss",
+        "../scss/base/_reset.scss",
+        "../scss/base/_typography.scss",
+        "../scss/layout/_landing-page.scss",
+        "../scss/_mixins.scss",
+        "../scss/_responsive.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
