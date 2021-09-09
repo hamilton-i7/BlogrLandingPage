@@ -1,0 +1,9 @@
+.link {
+    text-decoration: none;
+
+    &--light {
+        @extend .link;
+        color: $neutral-color-2;
+    }
+
+}

@@ -5,18 +5,6 @@
     font-weight: 900;
     outline: none;
     text-align: center;
-    
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    &:focus {
-        outline: none !important
-    }
 }
 
 .contained-btn {
@@ -37,7 +25,7 @@
 
     &--primary {
         @extend .contained-btn;
-        background-color: $primary-color-1;
+        background: $gradient-color-1;
         color: $neutral-color-1;
     }
 }

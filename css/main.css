@@ -18,8 +18,12 @@ body {
   font-size: 1.6rem;
 }
 
-.heading-1 {
+.heading, .heading-1 {
   font-weight: 600;
+}
+
+.heading-1 {
+  font-size: 3.6rem;
   text-align: center;
 }
 
@@ -27,8 +31,27 @@ body {
   text-align: center;
 }
 
+.heading-2, .heading-2--large {
+  font-size: 2.8rem;
+  line-height: 1.5;
+}
+
+.heading-2--large {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 2.9rem;
+}
+
 p {
   letter-spacing: 0.1rem;
+  line-height: 1.8;
+}
+
+.list-heading {
+  font-size: 1.8rem;
+  font-weight: 900;
 }
 
 .btn, .contained-btn, .contained-btn--white, .contained-btn--primary, .outlined-btn, .text-btn {
@@ -53,7 +76,7 @@ p {
 }
 
 .contained-btn--primary {
-  background-color: #ff525d;
+  background: linear-gradient(to right bottom, #ff8f70, #ff3d54);
   color: white;
 }
 
@@ -71,11 +94,18 @@ p {
   border: none;
 }
 
+.link, .link--light {
+  text-decoration: none;
+}
+
+.link--light {
+  color: #c8c8cb;
+}
+
 .hero {
   background: 38% 40%/450% no-repeat url("../images/bg-pattern-intro.svg"), linear-gradient(to right bottom, #ff8f70, #ff3d54);
   border-bottom-left-radius: 10rem;
   min-height: 60rem;
-  overflow: hidden;
   padding: 5.6rem 2.4rem;
 }
 
@@ -120,13 +150,8 @@ p {
 
 .main-nav__link-list {
   list-style: none;
-}
-
-.main-nav__link-list-item {
-  align-items: center;
-  display: flex;
-  font-size: 1.8rem;
-  font-weight: 900;
+  text-align: center;
+  width: 100%;
 }
 
 .main-nav__link-list-item:nth-of-type(1) {
@@ -146,13 +171,17 @@ p {
 }
 
 .main-nav__sublink-list {
+  background-color: #eeeef0;
+  border-radius: 0.3em;
   list-style: none;
+  margin-top: 2.4rem;
+  padding: 1.7rem 0;
 }
 
 .main-nav__sublink-list-item {
   color: #4b5862;
   font-size: 1.6rem;
-  display: none;
+  margin: 1.2rem 0;
 }
 
 .main-nav__divider {
@@ -168,5 +197,121 @@ p {
 
 .main-nav__btn:last-of-type {
   margin-bottom: 3.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.feature {
+  margin-top: 10rem;
+  padding: 0 2.4rem;
+}
+
+.feature__title, .feature__title--dark, .feature__title--light {
+  text-align: center;
+}
+
+.feature__title--dark {
+  color: #1f3f5b;
+}
+
+.feature__title--light {
+  color: white;
+}
+
+.feature__subtitle:first-of-type {
+  margin-top: 4.6rem;
+}
+
+.feature__subtitle:nth-of-type(2) {
+  margin-top: 4rem;
+}
+
+.feature__subtitle + p {
+  margin-top: 1.6rem;
+}
+
+.feature__details-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.feature__details-box > img {
+  display: block;
+  margin-top: 3.8rem;
+  width: 100%;
+}
+
+.feature:nth-of-type(2) {
+  align-items: center;
+  background: center -28rem/167% no-repeat url("../images/bg-pattern-circles.svg"), linear-gradient(to right bottom, #2c2d3f, #3f4164);
+  border-radius: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 27.3rem;
+  position: relative;
+}
+
+.feature:nth-of-type(2) > .text-box {
+  margin-top: 20rem;
+}
+
+.feature:nth-of-type(2) > .text-box > p {
+  color: #c8c8cb;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.feature:nth-of-type(2) > img {
+  display: block;
+  position: absolute;
+  top: -18.5rem;
+  width: 100%;
+}
+
+.feature:nth-of-type(3) {
+  margin-top: 7.9rem;
+  overflow: hidden;
+}
+
+.feature:nth-of-type(3) > .feature__details-box > img {
+  margin-top: 0;
+  width: 150%;
+}
+
+.footer {
+  align-items: center;
+  background-color: #25252d;
+  border-top-right-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  padding: 7.5rem 2.4rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-nav__link-list {
+  margin-top: 7.2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-nav__link-list-item:not(:first-of-type) {
+  margin-top: 4rem;
+}
+
+.footer-nav__sublink-list {
+  margin-top: 2.1rem;
+}
+
+.footer-nav__sublink-list-item {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */

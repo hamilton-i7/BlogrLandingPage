@@ -1,12 +1,13 @@
-$primary-color-1: rgb(255, 82, 93); // CTA Text
-$primary-color-2: rgb(255, 122, 133); // CTA hover background
-$primary-color-3: rgb(31, 63, 91); // Headings
+$primary-color-1: #ff525d; // CTA Text
+$primary-color-2: #ff7a85; // CTA hover background
+$primary-color-3: #1f3f5b; // Headings
 
 $neutral-color-1: white; // text
-$neutral-color-2: rgb(200, 200, 203); // footer text
-$neutral-color-3: rgb(75, 88, 98); // body copy
-$neutral-color-4: rgb(37, 37, 45); // footer background
-$neutral-color-5: rgb(232, 227, 227);
+$neutral-color-2: #c8c8cb; // footer text
+$neutral-color-3: #4b5862; // body copy
+$neutral-color-4: #25252d; // footer background
+$neutral-color-5: #e8e3e3;
+$neutral-color-6: #eeeef0;
 
-$gradient-color-1: linear-gradient(to right bottom, rgb(255, 143, 112), rgb(255, 61, 84)); // intro/cta mobile nav
-$gradient-color-2: linear-gradient(rgb(44, 45, 63), rgb(63, 65, 100)); // body
+$gradient-color-1: linear-gradient(to right bottom, #ff8f70, #ff3d54); // intro/cta mobile nav
+$gradient-color-2: linear-gradient(to right bottom, #2c2d3f, #3f4164); // body
