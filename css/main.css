@@ -31,21 +31,30 @@ p {
   letter-spacing: 0.1rem;
 }
 
-.btn, .contained-btn, .outlined-btn {
+.btn, .contained-btn, .contained-btn--white, .contained-btn--primary, .outlined-btn, .text-btn {
   cursor: pointer;
   font-family: Ubuntu, sans-serif;
   font-size: 1.6rem;
   font-weight: 900;
+  outline: none;
   text-align: center;
 }
 
-.contained-btn {
-  background-color: white;
+.contained-btn, .contained-btn--white, .contained-btn--primary {
   border: none;
   border-radius: 1.5em;
-  color: #ff525d;
-  outline: none;
+  min-width: 13.7rem;
   padding: 1.5rem 1.6rem;
+}
+
+.contained-btn--white {
+  background-color: white;
+  color: #ff525d;
+}
+
+.contained-btn--primary {
+  background-color: #ff525d;
+  color: white;
 }
 
 .outlined-btn {
@@ -53,8 +62,13 @@ p {
   border: 0.1rem solid white;
   border-radius: 1.5em;
   color: white;
-  outline: none;
+  min-width: 13.7rem;
   padding: 1.5rem 1.6rem;
+}
+
+.text-btn {
+  background-color: transparent;
+  border: none;
 }
 
 .hero {
@@ -88,9 +102,71 @@ p {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .main-nav__main-content {
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 2.4rem;
+  position: absolute;
+  top: 12.5rem;
+  width: 100%;
+}
+
+.main-nav__link-list {
+  list-style: none;
+}
+
+.main-nav__link-list-item {
+  align-items: center;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.main-nav__link-list-item:nth-of-type(1) {
+  margin-top: 2.4rem;
+}
+
+.main-nav__link-list-item:nth-of-type(2) {
+  margin: 2.4rem 0;
+}
+
+.main-nav__link-list-item:nth-of-type(3) {
+  margin-bottom: 2.4rem;
+}
+
+.main-nav__link-list-item img {
+  margin-left: 0.9rem;
+}
+
+.main-nav__sublink-list {
+  list-style: none;
+}
+
+.main-nav__sublink-list-item {
+  color: #4b5862;
+  font-size: 1.6rem;
   display: none;
+}
+
+.main-nav__divider {
+  background-color: #e8e3e3;
+  border: none;
+  height: 0.1rem;
+  width: 100%;
+}
+
+.main-nav__btn:first-of-type {
+  margin: 2.4rem 0;
+}
+
+.main-nav__btn:last-of-type {
+  margin-bottom: 3.2rem;
 }
 /*# sourceMappingURL=main.css.map */

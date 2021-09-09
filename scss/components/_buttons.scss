@@ -3,18 +3,31 @@
     font-family: Ubuntu, sans-serif;
     font-size: 1.6rem;
     font-weight: 900;
+    outline: none;
     text-align: center
 }
 
 .contained-btn {
     @extend .btn;
 
-    background-color: $neutral-color-1;
+    
     border: none;
     border-radius: 1.5em;
-    color: $primary-color-1;
-    outline: none;
+    min-width: 13.7rem;
     padding: 1.5rem 1.6rem;
+
+    &--white {
+        @extend .contained-btn;
+
+        background-color: $neutral-color-1;
+        color: $primary-color-1;
+    }
+
+    &--primary {
+        @extend .contained-btn;
+        background-color: $primary-color-1;
+        color: $neutral-color-1;
+    }
 }
 
 .outlined-btn {
@@ -24,6 +37,13 @@
     border: 0.1rem solid $neutral-color-1;
     border-radius: 1.5em;
     color: $neutral-color-1;
-    outline: none;
+    min-width: 13.7rem;
     padding: 1.5rem 1.6rem;
+}
+
+.text-btn {
+    @extend .btn;
+
+    background-color: transparent;
+    border: none;
 }

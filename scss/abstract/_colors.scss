@@ -1,11 +1,12 @@
-$primary-color-1: hsl(356, 100%, 66%); // CTA Text
-$primary-color-2: hsl(355, 100%, 74%); // CTA hover background
-$primary-color-3: hsl(208, 49%, 24%); // Headings
+$primary-color-1: rgb(255, 82, 93); // CTA Text
+$primary-color-2: rgb(255, 122, 133); // CTA hover background
+$primary-color-3: rgb(31, 63, 91); // Headings
 
 $neutral-color-1: white; // text
-$neutral-color-2: hsl(240, 2%, 79%); // footer text
-$neutral-color-3: hsl(207, 13%, 34%); // body copy
-$neutral-color-4: hsl(240, 10%, 16%); // footer background
+$neutral-color-2: rgb(200, 200, 203); // footer text
+$neutral-color-3: rgb(75, 88, 98); // body copy
+$neutral-color-4: rgb(37, 37, 45); // footer background
+$neutral-color-5: rgb(232, 227, 227);
 
-$gradient-color-1: linear-gradient(to right bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%)); // intro/cta mobile nav
-$gradient-color-2: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%)); // body
+$gradient-color-1: linear-gradient(to right bottom, rgb(255, 143, 112), rgb(255, 61, 84)); // intro/cta mobile nav
+$gradient-color-2: linear-gradient(rgb(44, 45, 63), rgb(63, 65, 100)); // body
