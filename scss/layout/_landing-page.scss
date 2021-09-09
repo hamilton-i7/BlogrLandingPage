@@ -1,0 +1,37 @@
+.hero {
+    //todo improve background-image position and size to match better the design
+    background: 38% 40% / 450% no-repeat url("../images/bg-pattern-intro.svg"), $gradient-color-1;
+    border-bottom-left-radius: 10rem;
+    min-height: 60rem;  
+    overflow: hidden;  
+    padding: 5.6rem 2.4rem;
+
+    &__title {
+        @include textColor($isLight: true, $isHeading: true);
+        margin-top: 10.8rem;
+
+        & + p {
+            @include textColor($isLight: true);
+        }
+    }
+
+    &__cta-box  {
+        display: flex;
+        justify-content: center;
+        margin-top: 4.8rem;
+    }
+
+    &__btn:first-of-type {
+        margin-right: 1.6rem;
+    }
+}
+
+.main-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__main-content {
+        display: none;
+    }
+}

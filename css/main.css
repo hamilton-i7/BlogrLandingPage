@@ -1,1 +1,96 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Overpass, sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading-1 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading-1 + p {
+  text-align: center;
+}
+
+p {
+  letter-spacing: 0.1rem;
+}
+
+.btn, .contained-btn, .outlined-btn {
+  cursor: pointer;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contained-btn {
+  background-color: white;
+  border: none;
+  border-radius: 1.5em;
+  color: #ff525d;
+  outline: none;
+  padding: 1.5rem 1.6rem;
+}
+
+.outlined-btn {
+  background-color: transparent;
+  border: 0.1rem solid white;
+  border-radius: 1.5em;
+  color: white;
+  outline: none;
+  padding: 1.5rem 1.6rem;
+}
+
+.hero {
+  background: 38% 40%/450% no-repeat url("../images/bg-pattern-intro.svg"), linear-gradient(to right bottom, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 10rem;
+  min-height: 60rem;
+  overflow: hidden;
+  padding: 5.6rem 2.4rem;
+}
+
+.hero__title {
+  color: white;
+  margin-top: 10.8rem;
+}
+
+.hero__title + p {
+  color: white;
+}
+
+.hero__cta-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+
+.hero__btn:first-of-type {
+  margin-right: 1.6rem;
+}
+
+.main-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__main-content {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

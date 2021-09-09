@@ -1,0 +1,11 @@
+@mixin textColor($isLight, $isHeading: false) {
+    @if $isLight {
+        color: $neutral-color-1
+    } @else {
+        @if $isHeading {
+            color: $primary-color-3
+        } @else {
+            color: $neutral-color-3
+        }
+    }
+}

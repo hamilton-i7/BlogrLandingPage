@@ -3,7 +3,9 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "layout/landing-page";
+@import "components/buttons";
 
 @import "./mixins";
 @import "./responsive";
+
+@import "layout/landing-page";

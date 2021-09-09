@@ -1,0 +1,29 @@
+.btn {
+    cursor: pointer;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center
+}
+
+.contained-btn {
+    @extend .btn;
+
+    background-color: $neutral-color-1;
+    border: none;
+    border-radius: 1.5em;
+    color: $primary-color-1;
+    outline: none;
+    padding: 1.5rem 1.6rem;
+}
+
+.outlined-btn {
+    @extend .btn;
+
+    background-color: transparent;
+    border: 0.1rem solid $neutral-color-1;
+    border-radius: 1.5em;
+    color: $neutral-color-1;
+    outline: none;
+    padding: 1.5rem 1.6rem;
+}
