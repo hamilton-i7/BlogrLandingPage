@@ -1,0 +1,15 @@
+.link {
+    display: block;
+    text-decoration: none;
+
+    &--light {
+        @extend .link;
+        color: $neutral-color-2;
+    }
+
+    &--dark {
+        @extend .link;
+        color: $neutral-color-3;
+    }
+
+}

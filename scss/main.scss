@@ -1,11 +1,12 @@
 @import "abstract/colors";
+@import "abstract/mixins";
+@import "abstract/responsive";
 
 @import "base/reset";
 @import "base/typography";
 
 @import "components/buttons";
+@import "components/links";
 
-@import "./mixins";
-@import "./responsive";
 
 @import "layout/landing-page";

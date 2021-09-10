@@ -15,39 +15,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <script src="./js/app.js" defer></script>
+
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 
 <body>
   <header class="hero">
     <nav class="main-nav">
-      <img src="./images/logo.svg" alt="logo" class="main-nav__logo">
-      <div class="main-nav__main-content">
+      <a href="#" class="main-nav__logo"><img src="./images/logo.svg" alt="logo"></a>
+      <div class="main-nav__main-content hide js--menu">
         <ul class="main-nav__link-list">
-          <li class="main-nav__link-list-item"> Product <img src="./images/icon-arrow-dark.svg" alt="expand">
+          <li class="main-nav__link-list-item list-heading">
+            <div class="js--menuHeading">Product <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
 
-            <ul class="main-nav__sublink-list">
-              <li class="main-nav__sublink-list-item">Overview</li>
-              <li class="main-nav__sublink-list-item">Pricing</li>
-              <li class="main-nav__sublink-list-item">Marketplace</li>
-              <li class="main-nav__sublink-list-item">Features</li>
-              <li class="main-nav__sublink-list-item">Integrations</li>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Overview</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Pricing</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Marketplace</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Features</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Integrations</a></li>
             </ul>
           </li>
-          <li class="main-nav__link-list-item"> Company <img src="./images/icon-arrow-dark.svg" alt="expand">
+          <li class="main-nav__link-list-item list-heading">
+            <div class="js--menuHeading">Company <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
 
-            <ul class="main-nav__sublink-list">
-              <li class="main-nav__sublink-list-item">About</li>
-              <li class="main-nav__sublink-list-item">Team</li>
-              <li class="main-nav__sublink-list-item">Blog</li>
-              <li class="main-nav__sublink-list-item">Careers</li>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">About</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Team</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Blog</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Careers</a></li>
             </ul>
           </li>
-          <li class="main-nav__link-list-item"> Connect <img src="./images/icon-arrow-dark.svg" alt="expand">
-            <ul class="main-nav__sublink-list">
-              <li class="main-nav__sublink-list-item">Contact</li>
-              <li class="main-nav__sublink-list-item">Newsletter</li>
-              <li class="main-nav__sublink-list-item">LinkedIn</li>
+          <li class="main-nav__link-list-item list-heading">
+            <div class="js--menuHeading">Connect <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Contact</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Newsletter</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">LinkedIn</a></li>
             </ul>
           </li>
         </ul>
@@ -55,7 +60,7 @@
         <button class="main-nav__btn text-btn">Login</button>
         <button class="main-nav__btn contained-btn--primary">Sign Up</button>
       </div>
-      <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon">
+      <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon js--menuBtn">
     </nav>
     <h1 class="hero__title heading-1">A modern publishing platform</h1>
     <p class="hero__slogan">Grow your audience and build your online brand</p>
@@ -64,54 +69,86 @@
       <button class="hero__btn outlined-btn">Learn More</button>
     </div>
   </header>
-  <!--
 
-  Designed for the future
+  <main>
+    <section class="feature">
+      <h2 class="feature__title--dark heading-2">Designed for the future</h2>
+      <div class="feature__details-box">
+        <img src="./images/illustration-editor-mobile.svg" alt="editor illustration">
+        <div class="text-box">
+          <h3 class="feature__subtitle heading-3">Introducing an extensible editor</h3>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.</p>
+          <h3 class=" feature__subtitle heading-3">Robust content management</h3>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <img src="./images/illustration-phones.svg" alt="phones">
+      <div class="text-box">
+        <h2 class="feature__title--light heading-2--large">State of the Art Infrastructure</h2>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="feature__details-box">
+        <img src="./images/illustration-laptop-mobile.svg" alt="editor illustration">
+        <div class="text-box">
+          <h3 class="feature__subtitle heading-3">Free, open, simple</h3>
+          <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+            tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <h3 class=" feature__subtitle heading-3">Powerful tooling</h3>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
+            a breeze,
+            but
+            capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </section>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-  change the looks of a blog.
+    <footer class="footer">
+      <a href="#" class="footer__logo"><img src="./images/logo.svg" alt="Logo"></a>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      <ul class="footer-nav__link-list">
+        <li class="footer-nav__link-list-item list-heading">Product
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          <ul class="footer-nav__sublink-list">
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Overview</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Pricing</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Marketplace</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Features</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav__link-list-item list-heading">Company
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn -->
+          <ul class="footer-nav__sublink-list">
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">About</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Team</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Blog</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Careers</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav__link-list-item list-heading">Connect
+          <ul class="footer-nav__sublink-list">
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Contact</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">Newsletter</a></li>
+            <li class="footer-nav__sublink-list-item"><a href="#" class="link--light">LinkedIn</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </main>
 </body>
 
 </html>

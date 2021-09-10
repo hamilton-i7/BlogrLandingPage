@@ -3,15 +3,45 @@ body {
     font-size: 1.6rem;
 }
 
-.heading-1 {
+.heading {
     font-weight: 600;
-    text-align: center;
 
-    & + p {
+    &-1 {
+        @extend .heading;
+
+        font-size: 3.6rem;
         text-align: center;
+
+        & + p {
+            text-align: center;
+        }
+    }
+
+    &-2 {
+        font-size: 2.8rem;
+        line-height: 1.5;
+        
+        &--large {
+            @extend .heading-2;
+            font-size: 4rem;    
+
+            @include range(320px, 327px) {
+                font-size: 3.6rem;
+            }
+        }
+    }
+
+    &-3 {
+        font-size: 2.9rem;
     }
 }
 
 p {
     letter-spacing: 0.1rem;
+    line-height: 1.8;
+}
+
+.list-heading {
+    font-size: 1.8rem;
+    font-weight: 900;
 }
