@@ -15,42 +15,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <script src="./js/app.js" defer></script>
+
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 
 <body>
   <header class="hero">
     <nav class="main-nav">
-      <img src="./images/logo.svg" alt="logo" class="main-nav__logo">
-      <div class="main-nav__main-content hide">
+      <a href="#" class="main-nav__logo"><img src="./images/logo.svg" alt="logo"></a>
+      <div class="main-nav__main-content hide js--menu">
         <ul class="main-nav__link-list">
           <li class="main-nav__link-list-item list-heading">
-            <div>Product <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <div class="js--menuHeading">Product <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
 
-            <ul class="main-nav__sublink-list hide">
-              <li class="main-nav__sublink-list-item">Overview</li>
-              <li class="main-nav__sublink-list-item">Pricing</li>
-              <li class="main-nav__sublink-list-item">Marketplace</li>
-              <li class="main-nav__sublink-list-item">Features</li>
-              <li class="main-nav__sublink-list-item">Integrations</li>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Overview</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Pricing</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Marketplace</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Features</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Integrations</a></li>
             </ul>
           </li>
           <li class="main-nav__link-list-item list-heading">
-            <div>Company <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <div class="js--menuHeading">Company <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
 
-            <ul class="main-nav__sublink-list hide list-heading">
-              <li class="main-nav__sublink-list-item">About</li>
-              <li class="main-nav__sublink-list-item">Team</li>
-              <li class="main-nav__sublink-list-item">Blog</li>
-              <li class="main-nav__sublink-list-item">Careers</li>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">About</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Team</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Blog</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Careers</a></li>
             </ul>
           </li>
-          <li class="main-nav__link-list-item">
-            <div>Connect <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
-            <ul class="main-nav__sublink-list hide">
-              <li class="main-nav__sublink-list-item">Contact</li>
-              <li class="main-nav__sublink-list-item">Newsletter</li>
-              <li class="main-nav__sublink-list-item">LinkedIn</li>
+          <li class="main-nav__link-list-item list-heading">
+            <div class="js--menuHeading">Connect <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <ul class="main-nav__sublink-list hide js--submenu">
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Contact</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Newsletter</a></li>
+              <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">LinkedIn</a></li>
             </ul>
           </li>
         </ul>
@@ -58,7 +60,7 @@
         <button class="main-nav__btn text-btn">Login</button>
         <button class="main-nav__btn contained-btn--primary">Sign Up</button>
       </div>
-      <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon">
+      <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon js--menuBtn">
     </nav>
     <h1 class="hero__title heading-1">A modern publishing platform</h1>
     <p class="hero__slogan">Grow your audience and build your online brand</p>
@@ -115,7 +117,7 @@
     </section>
 
     <footer class="footer">
-      <img src="./images/logo.svg" alt="Logo">
+      <a href="#" class="footer__logo"><img src="./images/logo.svg" alt="Logo"></a>
 
       <ul class="footer-nav__link-list">
         <li class="footer-nav__link-list-item list-heading">Product

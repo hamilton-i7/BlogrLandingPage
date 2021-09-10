@@ -24,6 +24,10 @@ body {
         &--large {
             @extend .heading-2;
             font-size: 4rem;    
+
+            @include range(320px, 327px) {
+                font-size: 3.6rem;
+            }
         }
     }
 
