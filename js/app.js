@@ -1,16 +1,13 @@
 const menuBtn = document.querySelector('.js--menuBtn');
 const menu = document.querySelector('.js--menu');
 const menuHeadings = document.querySelectorAll('.js--menuHeading');
+const menuHeadingIcons = document.querySelectorAll('.js--menuHeadingIcon');
 const submenus = document.querySelectorAll('.js--submenu');
-let isMenuOpen = false;
+let menuOpen = false;
 
 window.addEventListener('click', e => {
-    if (e.target === menuBtn) {
-        if (!isMenuOpen) {
-            showMenu();
-            return
-        }
-        hideMenu();
+    if (menuBtn.contains(e.target)) {
+        !menuOpen ? showMenu() : hideMenu();
     } else {
         if (!menu.contains(e.target)) {
             hideMenu();
@@ -21,42 +18,47 @@ window.addEventListener('click', e => {
 
 for (let i = 0; i < menuHeadings.length; i++) {
     menuHeadings[i].addEventListener('click', () => {
-        menuHeadings[i].classList.toggle('reversed');
+        menuHeadings[i].classList.toggle('expanded');
+        menuHeadingIcons[i].classList.toggle('expanded');
+
         for (const submenu of submenus) {
             if (submenu !== submenus[i]) {
-                submenu.classList.add('hide');
+                submenu.classList.remove('open');
             }
         }
 
         for (const heading of menuHeadings) {
             if (heading !== menuHeadings[i]) {
-                heading.classList.remove('reversed');
+                heading.classList.remove('expanded');
             }
         }
 
-        submenus[i].classList.toggle('hide');
+        for (const headingIcon of menuHeadingIcons) {
+            if (headingIcon !== menuHeadingIcons[i]) {
+                headingIcon.classList.remove('expanded');
+            }
+        }
+        submenus[i].classList.toggle('open');
     });
 }
 
 function showMenu() {
-    menuBtn.src = './images/icon-close.svg';
-    menuBtn.alt = 'close menu';
-    menu.classList.remove('hide');
-    isMenuOpen = true;
+    menuBtn.classList.add('open');
+    menu.classList.add('open');
+    menuOpen = true;
 }
 
 function hideMenu() {
-    menuBtn.src = './images/icon-hamburger.svg';
-    menuBtn.alt = 'open menu';
-    menu.classList.add('hide');
+    menuBtn.classList.remove('open');
+    menu.classList.remove('open');
 
     for (const submenu of submenus) {
-        submenu.classList.add('hide');
+        submenu.classList.remove('open');
     }
 
     for (const heading of menuHeadings) {
-        heading.classList.remove('reversed');
+        heading.classList.remove('expanded');
     }
 
-    isMenuOpen = false;
+    menuOpen = false;
 }
