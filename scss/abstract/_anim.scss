@@ -1,0 +1,38 @@
+$short-animation: 350ms;
+
+.main-nav  {
+
+    &-menu-btn.open {
+        & .main-nav-menu-btn__burger {
+            transform: translateX(-2.5rem);
+            background-color: transparent;
+    
+            &::before {
+                transform: rotate(45deg) translate(1.75rem, -1.75rem);
+            }
+    
+            &::after {
+                transform: rotate(-45deg) translate(1.75rem, 1.75rem);
+            }
+        }
+    }
+
+    &__main-content.open {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &__main-content.expanded {
+        height: auto;        
+    }
+
+    &__sublink-list.open {
+        margin-top: 2.4rem;
+        max-height: 12em;        
+        padding: 1.7rem 0;
+    }    
+
+    &__link-list-item img.expanded {
+        transform: rotate(-180deg);
+    }
+}

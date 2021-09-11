@@ -24,12 +24,13 @@
   <header class="hero">
     <nav class="main-nav">
       <a href="#" class="main-nav__logo"><img src="./images/logo.svg" alt="logo"></a>
-      <div class="main-nav__main-content hide js--menu">
+      <div class="main-nav__main-content js--menu">
         <ul class="main-nav__link-list">
           <li class="main-nav__link-list-item list-heading">
-            <div class="js--menuHeading">Product <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <div class="js--menuHeading">Product <img src="./images/icon-arrow-dark.svg" alt="expand"
+                class="js--menuHeadingIcon"></div>
 
-            <ul class="main-nav__sublink-list hide js--submenu">
+            <ul class="main-nav__sublink-list js--submenu">
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Overview</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Pricing</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Marketplace</a></li>
@@ -38,9 +39,10 @@
             </ul>
           </li>
           <li class="main-nav__link-list-item list-heading">
-            <div class="js--menuHeading">Company <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
+            <div class="js--menuHeading">Company <img src="./images/icon-arrow-dark.svg" alt="expand"
+                class="js--menuHeadingIcon"></div>
 
-            <ul class="main-nav__sublink-list hide js--submenu">
+            <ul class="main-nav__sublink-list js--submenu">
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">About</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Team</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Blog</a></li>
@@ -48,8 +50,9 @@
             </ul>
           </li>
           <li class="main-nav__link-list-item list-heading">
-            <div class="js--menuHeading">Connect <img src="./images/icon-arrow-dark.svg" alt="expand"></div>
-            <ul class="main-nav__sublink-list hide js--submenu">
+            <div class="js--menuHeading">Connect <img src="./images/icon-arrow-dark.svg" alt="expand"
+                class="js--menuHeadingIcon"></div>
+            <ul class="main-nav__sublink-list js--submenu">
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Contact</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">Newsletter</a></li>
               <li class="main-nav__sublink-list-item"><a href="#" class="link--dark">LinkedIn</a></li>
@@ -60,7 +63,10 @@
         <button class="main-nav__btn text-btn">Login</button>
         <button class="main-nav__btn contained-btn--primary">Sign Up</button>
       </div>
-      <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon js--menuBtn">
+      <div class="main-nav-menu-btn js--menuBtn">
+        <div class="main-nav-menu-btn__burger"></div>
+      </div>
+      <!-- <img src="./images/icon-hamburger.svg" alt="open menu" class="main-nav__mobile-nav-icon js--menuBtn"> -->
     </nav>
     <h1 class="hero__title heading-1">A modern publishing platform</h1>
     <p class="hero__slogan">Grow your audience and build your online brand</p>
