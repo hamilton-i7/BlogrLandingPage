@@ -52,13 +52,10 @@ function hideMenu() {
     menuBtn.classList.remove('open');
     menu.classList.remove('open');
 
-    for (const submenu of submenus) {
-        submenu.classList.remove('open');
+    for (let i = 0; i < submenus.length; i++) {
+        submenus[i].classList.remove('open');
+        menuHeadings[i].classList.remove('expanded');
+        menuHeadingIcons[i].classList.remove('expanded');
     }
-
-    for (const heading of menuHeadings) {
-        heading.classList.remove('expanded');
-    }
-
     menuOpen = false;
 }
