@@ -21,21 +21,17 @@ for (let i = 0; i < menuHeadings.length; i++) {
         menuHeadings[i].classList.toggle('expanded');
         menuHeadingIcons[i].classList.toggle('expanded');
 
-        for (const submenu of submenus) {
-            if (submenu !== submenus[i]) {
-                submenu.classList.remove('open');
+        for (let j = 0; j < submenus.length; j++) {
+            if (submenus[j] !== submenus[i]) {
+                submenus[j].classList.remove('open');
             }
-        }
 
-        for (const heading of menuHeadings) {
-            if (heading !== menuHeadings[i]) {
-                heading.classList.remove('expanded');
+            if (menuHeadings[j] !== menuHeadings[i]) {
+                menuHeadings[j].classList.remove('expanded');
             }
-        }
 
-        for (const headingIcon of menuHeadingIcons) {
-            if (headingIcon !== menuHeadingIcons[i]) {
-                headingIcon.classList.remove('expanded');
+            if (menuHeadingIcons[j] !== menuHeadingIcons[i]) {
+                menuHeadingIcons[j].classList.remove('expanded');
             }
         }
         submenus[i].classList.toggle('open');
